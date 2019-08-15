@@ -28,6 +28,8 @@ Retrieving 'https://cloud.r-project.org/src/contrib/fclust_2.1.tar.gz' ...
 <snip>
 ```
 
+dependeciesのあるパッケージについては、Linuxだと`~/.local/share/renv`に保存されて、リンクが付与される
+
 ### ```renv::status()```
 
 ```R
