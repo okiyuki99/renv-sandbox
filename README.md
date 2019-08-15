@@ -106,12 +106,16 @@ renvの振る舞いを設定できる。無視するパッケージなど
 > renv::settings$ignored.packages("devtools", persist = FALSE)
 ```
 
-### `renv::settings$use.cache(FALSE)`
+#### `renv::settings$use.cache(FALSE)`
 
 renvキャッシュを使わなくする設定
 
+#### `renv::settings$snapshot.type("simple")`
+
+renvのsnapshotの方法を変更する。デフォルトは`packrat`。`simple`にしたら、ユーザライブラリのすべてをlockfileに書こうとする
+
 ### Issue
-* `pacman::p_load` は今の所対応していないっぽい？ので、libraryを使おう
+* `pacman::p_load` 対応してくれた: https://github.com/rstudio/renv/issues/143
 
 ### 参考
 * [Snapshot and Restore](https://environments.rstudio.com/snapshot)
